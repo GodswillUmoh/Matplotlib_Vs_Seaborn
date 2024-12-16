@@ -117,3 +117,36 @@ plt.show()
 ```
 ### [View the results of the code Here](https://colab.research.google.com/drive/11C7KOKAHf4BT18V76uzWFrnqUwdbdoNA#scrollTo=u2CdnB6sEWkC)
 
+
+## Exercise 4
+Given the set of dataset, plot a subplot for y1 and y2
+
+## Answer:
+```python
+import matplotlib.pyplot as plt
+
+#Dataset
+x = [1, 2, 3, 4, 5]
+y1 = [1, 4, 9, 16, 25]
+y2 = [1, 2, 3, 4, 5]
+
+#Creating the subplot
+fig, (fig1, fig2) = plt.subplots(1, 2) #arrange in 1 row 2 column
+
+#first plot
+fig1.plot(x, y1, color='purple')
+fig1.set_title('Y1 Scores')
+
+#second plot
+fig2.plot(x, y2, color= 'green')
+fig2.set_title('Y2 Scores')
+
+#Set Overall Title
+fig.suptitle("A Graph of x and Y1, Y2")
+
+#plt.savefig('My figure')
+#show
+plt.show()
+```
+### [View the results of the code Here](https://colab.research.google.com/drive/11C7KOKAHf4BT18V76uzWFrnqUwdbdoNA#scrollTo=u2CdnB6sEWkC)
+
