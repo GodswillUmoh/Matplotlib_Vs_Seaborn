@@ -31,7 +31,7 @@ plt.plot(x, y, marker = "o", markersize=17, color="red", linestyle="dashed", lin
 plt.show()
 ```
 
-## Exercises
+## Exercise 1
 > Activity 1
 > You are a trainer and the following scores were recorded for the trainees:
 > Chioma = [70, 80, 90, 95, 30, 89]
@@ -60,4 +60,34 @@ plt.show()
 ```
 ### [View the results of the code Here](https://colab.research.google.com/drive/11C7KOKAHf4BT18V76uzWFrnqUwdbdoNA#scrollTo=u2CdnB6sEWkC)
 
+
+## Exercise 2
+> Given the following: Data for multiple lines:
+> x = [1, 2, 3, 4, 5],
+> y1 = [1, 4, 9, 16, 25],
+> y2 = [1, 2, 3, 4, 5],
+> y3 = [2, 8, 20, 25, 30]
+
+plot a graph with python
+
+## Answer:
+```python
+import matplotlib.pyplot as plt
+
+x = [1, 2, 3, 4, 5]
+y1 = [1, 4, 9, 16, 25]
+y2 = [1, 2, 3, 4, 5]
+y3 = [2, 8, 20, 25, 30]
+
+plt.plot(x, y1, marker="o", color="red", markersize="14", label='y1')
+plt.plot(x, y2, marker="o", color="green", markersize="14", label='y2')
+plt.plot(x, y3, marker="o", color="purple", markersize="14", label='y3')
+plt.title("A Graph of x against y1, y2, y3")
+plt.xlabel("X Values")
+plt.ylabel("Y Values")
+
+plt.legend()
+plt.show()
+```
+### [View the results of the code Here](https://colab.research.google.com/drive/11C7KOKAHf4BT18V76uzWFrnqUwdbdoNA#scrollTo=u2CdnB6sEWkC)
 
