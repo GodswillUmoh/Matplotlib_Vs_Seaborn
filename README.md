@@ -6,3 +6,5 @@ Both complement each other and very useful in what the programmer whats to achie
 > Matplotlib is a widely used Python library for data visualization. Also, Seaborn is a Python data visualization library built on top of Matplotlib. It provides a high-level interface for creating visually appealing and informative statistical graphics
 
 ## Key Difference
+> Matplotlib provides the foundation for creating plots and is more flexible but requires more customization.
+> Seaborn offers a simpler, high-level interface for creating complex plots with minimal effort.
