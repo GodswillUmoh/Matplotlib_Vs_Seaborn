@@ -9,7 +9,7 @@ Both complement each other and very useful in what the programmer whats to achie
 > Matplotlib provides the foundation for creating plots and is more flexible but requires more customization.
 > Seaborn offers a simpler, high-level interface for creating complex plots with minimal effort.
 
-## Displaying some of the python codes for Matplotlib
+# Displaying some of the python codes for Matplotlib
 ```python
 '''
 Some of the popular visualization for matplotlib include:
@@ -149,4 +149,21 @@ fig.suptitle("A Graph of x and Y1, Y2")
 plt.show()
 ```
 ### [View the results of the code Here](https://colab.research.google.com/drive/11C7KOKAHf4BT18V76uzWFrnqUwdbdoNA#scrollTo=u2CdnB6sEWkC)
+
+# Displaying some of the python Exercisess for Seaborn
+> Dataset Used is the Iris data that is preloaded in the seaborn library
+```python
+'''
+Some of the popular visualization for seaborn include:
+sns.barplot()
+sns.displot()
+sns.heatmap()
+sns.boxplot()
+
+to have multiple color, one can use the palette (e.g palette='rocket', Set1, 2, )
+The hue function works like legend in powerBI by grouping for visualization
+'''
+# The coordinate is given as (x, y)
+```
+
 
