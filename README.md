@@ -91,3 +91,29 @@ plt.show()
 ```
 ### [View the results of the code Here](https://colab.research.google.com/drive/11C7KOKAHf4BT18V76uzWFrnqUwdbdoNA#scrollTo=u2CdnB6sEWkC)
 
+
+## Exercise 3
+>Given the set of dataset, plot a bar, histogram with py.
+
+## Answer:
+```python
+#Creating a Bar Chart
+
+grades = ['F', 'P', 'C', 'B', 'A']
+cum_scores = [30, 40, 50, 60, 70]
+
+#Plotting bar
+plt.bar(grades, cum_scores, color='orange')
+#plt.hist(cum_scores, bins=6, color='purple')
+
+
+#labels
+plt.xlabel('Students Grades')
+plt.ylabel('Cummulative Scores')
+plt.title('Students Grading')
+
+#To show
+plt.show()
+```
+### [View the results of the code Here](https://colab.research.google.com/drive/11C7KOKAHf4BT18V76uzWFrnqUwdbdoNA#scrollTo=u2CdnB6sEWkC)
+
