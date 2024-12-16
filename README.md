@@ -150,7 +150,7 @@ plt.show()
 ```
 ### [View the results of the code Here](https://colab.research.google.com/drive/11C7KOKAHf4BT18V76uzWFrnqUwdbdoNA#scrollTo=u2CdnB6sEWkC)
 
-# Displaying some of the python Exercisess for Seaborn
+# Displaying some of the python Exercises for Seaborn
 > Dataset Used is the Iris data that is preloaded in the seaborn library
 ```python
 '''
