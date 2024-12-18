@@ -286,3 +286,24 @@ plt.show()
 sns.scatterplot(x='sepal_length', y='petal_length', data=dataset)
 plt.show()
 ```
+```python
+# Other graphical Representation
+# Scatter plotting
+
+sns.scatterplot(x='sepal_length', y='petal_length', data=dataset)
+plt.show()
+
+#pairplot
+sns.pairplot(dataset)
+
+#which features is best for this analysis? Lets add Hue
+sns.pairplot(dataset, hue='species', palette='rocket')
+plt.show()
+
+# From the result of pairplot, we can see that petal_length VS petal_width are the best features in the evaluation as they are distinctly
+# saparated. Hence, lets plot the linear graph to see: lmplot
+
+#lmplot
+sns.lmplot(x='petal_length', y='petal_width', data=dataset)
+plt.show()
+```
