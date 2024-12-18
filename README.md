@@ -266,9 +266,11 @@ plt.show()
 ```
 
 > boxplot is an excellent tool for exploring and summarizing differences in y-axis variable across the x-axis variable. In this analysis, each boxplot represents the distribution of sepal_length for a specific species. _The line inside each box is the median (50th percentile) of sepal_length for that species._
-> _ _Spread of Data_ _: The length of the box represents the interquartile range (IQR), which is the range between the 25th percentile (lower edge of the box) and the 75th percentile (upper edge of the box). _A smaller box indicates that most of the values are tightly clustered around the median._
-> 
+> __Spread of Data__: The length of the box represents the interquartile range (IQR), which is the range between the 25th percentile (lower edge of the box) and the 75th percentile (upper edge of the box). _A smaller box indicates that most of the values are tightly clustered around the median._
+
+> __Outliers__: Points outside the "whiskers" (lines extending from the box) are considered outliers. Whiskers extend to approximately 1.5 times the IQR beyond the 25th and 75th percentiles.
 ```python
 # h). create a box plot.
-
+sns.boxplot(x='species', y='sepal_length', data=dataset)
+plt.show()
 ```
