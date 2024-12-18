@@ -1,5 +1,5 @@
 # Matplotlib_Vs_Seaborn
-The two are python libraries us for visualization. Some will ask which should I use. The answer is not necessarily yes or no.
+The two are python libraries use for visualization. Some will ask which should I use. The answer is not necessarily yes or no.
 Both complement each other and very useful in what the programmer whats to achieve. In this report, I run visuals with Matplotlib and seaborn.
 
 ## Defining The terms
