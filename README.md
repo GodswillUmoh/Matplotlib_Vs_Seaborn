@@ -178,6 +178,9 @@ f). Produce a chart to show correlation across data
 g). Produce a Chart using the count function
 h). create a box plot.
 
+## Answer to the Exercises
+### [To view the result of the Codes, Click Here](https://colab.research.google.com/drive/11C7KOKAHf4BT18V76uzWFrnqUwdbdoNA#scrollTo=rCW2jNqZOzLw)
+
 ```python
 #  a). Load the dataset
 import numpy as np
@@ -211,3 +214,35 @@ import seaborn as sns
 
 sns.barplot(x= 'sepal_length', y = 'sepal_width', data = dataset)
 ```
+
+```python
+# Plot a distribution graph to visualize data
+# e) Distribution plot for sepal_length
+sns.displot(dataset.sepal_length, bins= 10, color="red")
+plt.show()
+```
+
+```python
+# Produce a chart to show correlation across data
+# Plotting with heatmap
+# Produce a chart to show correlation across data
+# Plotting with heatmap
+
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+#using a preloaded data in seaborn
+# We can exclude the string data being the last column
+dataset.info()
+
+#Exclude the last column being string
+num_var = dataset.iloc[:, :-1]
+num_var.head()
+
+#Plotting the heatmap
+sns.heatmap(num_var.corr(), cbar=True, linewidths=0.5)
+
+```
+> To interpret heatmap(), pay attention to the dark and light spots; the dark often show low correlation while light shows high correlation considering the scale by the side of the graph.
