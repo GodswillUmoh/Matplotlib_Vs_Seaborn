@@ -277,3 +277,12 @@ plt.show()
 sns.boxplot(x='species', y='sepal_length', data=dataset)
 plt.show()
 ```
+
+## Other Visualization
+```python
+# Other graphical Representation
+# Scatter plotting
+
+sns.scatterplot(x='sepal_length', y='petal_length', data=dataset)
+plt.show()
+```
