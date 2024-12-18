@@ -306,4 +306,8 @@ plt.show()
 #lmplot
 sns.lmplot(x='petal_length', y='petal_width', data=dataset)
 plt.show()
+
+#lmplot; regression line, you can add markers to separate the plot
+sns.lmplot(x='petal_length', y='petal_width', data=dataset, hue='species', markers=["o", "*", "^"])
+plt.show()
 ```
