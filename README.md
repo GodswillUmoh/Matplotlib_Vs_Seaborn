@@ -166,4 +166,48 @@ The hue function works like legend in powerBI by grouping for visualization
 # The coordinate is given as (x, y)
 ```
 
+## Seaborn Exercises
+Using the Iris Dataset, carryout the following visualization and provide meaningful insights to the data. The task are:
 
+> a). Load the dataset
+b). Print the Top 5 and Bottom 5 rows of the dataset
+c). Print the number of rows and columns in the dataset
+d). Plot a bar chat to visualize data
+e). Plot a distribution graph to visualize data
+f). Produce a chart to show correlation across data
+g). Produce a Chart using the count function
+h). create a box plot.
+
+```python
+#  a). Load the dataset
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+#using a preloaded data in seaborn
+dataset = sns.load_dataset('iris')
+
+b). Print the Top 5 
+dataset.head()
+```
+```python
+# Print Bottom 5 rows of the dataset
+dataset.tail()
+```
+```python
+# c). Print the number of rows and columns in the dataset
+# Printing the shape of the Iris Data
+dataset.shape
+#results (150, 5), that is 150 rows and 5 columns
+```
+
+```python
+# Plot a bar chat to visualize data
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+sns.barplot(x= 'sepal_length', y = 'sepal_width', data = dataset)
+```
