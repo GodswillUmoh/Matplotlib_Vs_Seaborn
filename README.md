@@ -246,3 +246,29 @@ sns.heatmap(num_var.corr(), cbar=True, linewidths=0.5)
 
 ```
 > To interpret heatmap(), pay attention to the dark and light spots; the dark often show low correlation while light shows high correlation considering the scale by the side of the graph.
+
+
+```python
+# Produce a Chart using the count function
+# Produce a Chart using the count function
+# in this case we will like to count the species, vertical
+sns.countplot(x='species', data=dataset, palette= 'rocket')
+plt.show()
+
+# Produce a Chart using the count function
+# in this case we will like to count the sepal_length, showing horizontally
+sns.countplot(y='sepal_length', data=dataset, palette= 'rocket')
+plt.show()
+
+# Adding hue to the graph
+sns.countplot(x='petal_width', data=dataset, palette= 'rocket', hue='species')
+plt.show()
+```
+
+> boxplot is an excellent tool for exploring and summarizing differences in y-axis variable across the x-axis variable. In this analysis, each boxplot represents the distribution of sepal_length for a specific species. _The line inside each box is the median (50th percentile) of sepal_length for that species._
+> _ _Spread of Data_ _: The length of the box represents the interquartile range (IQR), which is the range between the 25th percentile (lower edge of the box) and the 75th percentile (upper edge of the box). _A smaller box indicates that most of the values are tightly clustered around the median._
+> 
+```python
+# h). create a box plot.
+
+```
