@@ -36,7 +36,7 @@ plt.show()
 > You are a trainer and the following scores were recorded for the trainees:
 > Chioma = [70, 80, 90, 95, 30, 89]
 > David = [40, 60, 50, 45, 70, 55]
-> based_score =[20, 40, 60, 70, 80, 100]
+> x_score =[20, 40, 60, 70, 80, 100]
 > Plot a graph using python
 
 ## Answer:
@@ -254,6 +254,9 @@ sns.heatmap(num_var.corr(), cbar=True, linewidths=0.5)
 # in this case we will like to count the species, vertical
 sns.countplot(x='species', data=dataset, palette= 'rocket')
 plt.show()
+
+#Checking the value count for each species to see if the representation is correct
+dataset['species'].value_counts() #result shows each is 50
 
 # Produce a Chart using the count function
 # in this case we will like to count the sepal_length, showing horizontally
