@@ -7,7 +7,7 @@ Both complement each other and very useful in what the programmer wants to achie
 
 ## Key Difference
 > Matplotlib provides the foundation for creating plots and is more flexible but requires more customization.
-> Seaborn offers a simpler, high-level interface for creating complex plots with minimal effort.
+> Seaborn offers a simpler, high-level interface for creating complex plots with minimal effort..
 
 # Displaying some of the python codes for Matplotlib
 ```python
